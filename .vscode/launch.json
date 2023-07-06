@@ -1,0 +1,77 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ConfigServerApplication<config-server>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.tcser.configserver.ConfigServerApplication",
+            "projectName": "config-server",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=50791 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=config-server"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-HrPayrollApplication<hr-payroll>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.tcser.hrpayroll.HrPayrollApplication",
+            "projectName": "hr-payroll",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MsEurekaServerApplication<ms-eureka-server>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.tcser.mseurekaserver.MsEurekaServerApplication",
+            "projectName": "ms-eureka-server",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=50906 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=ms-eureka-server"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MsOauthApplication<ms-oauth>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.tcs.msoauth.MsOauthApplication",
+            "projectName": "ms-oauth",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MsUserApplication<ms-user>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.tcser.msuser.MsUserApplication",
+            "projectName": "ms-user",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=50936 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=ms-user"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MsOauthApplication<ms-oauth>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.tcser.msoauth.MsOauthApplication",
+            "projectName": "ms-oauth",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ApiGatewayApplication<api-gateway>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.tcser.apigateway.ApiGatewayApplication",
+            "projectName": "api-gateway",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

@@ -7,13 +7,25 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ms-oauth" />
-        <module name="ms-user" />
+        <module name="hr-payroll" />
+        <module name="config-server" />
         <module name="ms-eureka-server" />
+        <module name="ms-user" />
+        <module name="api-gateway" />
+        <module name="hr-worker" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hr-eureka-server" target="11" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-gateway" options="-parameters" />
+      <module name="config-server" options="-parameters" />
+      <module name="hr-eureka-server" options="-parameters" />
+      <module name="hr-payroll" options="-parameters" />
+      <module name="hr-worker" options="-parameters" />
       <module name="ms-eureka-server" options="-parameters" />
       <module name="ms-oauth" options="-parameters" />
       <module name="ms-user" options="-parameters" />
