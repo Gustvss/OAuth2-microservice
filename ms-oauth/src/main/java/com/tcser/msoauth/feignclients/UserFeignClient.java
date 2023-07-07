@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.tcser.msoauth.entities.User;
 
 @Component
-@FeignClient(name = "ms-user", path = "/users")
+@FeignClient(name = "ms-user")
 public interface UserFeignClient {
-    @GetMapping(value = "/search")
+    @GetMapping(value = "/users/search")
     ResponseEntity<User> findByEmail(@RequestParam String email);
 }
 
